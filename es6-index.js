@@ -1,11 +1,48 @@
 class Demo {
-  constructor() {
-    this.wow = "wow"
+  constructor(wowString) {
+    this.wow = wowString
+  }
+
+  printWow() {
+    console.log(`I am printing ${this.wow}`)
   }
 }
 
-const d = new Demo()
+const d = new Demo('wow')
 
-console.log(d.wow)
+d.printWow()
 
 // regular old functions below
+
+// let is mutable == you can change it
+// EX: let ok = "ok"
+//    ok = "wow"
+
+// const cannot be changed or modified
+//typically your functions will be constants
+const hello = () => {
+  console.log('sah duh')
+}
+
+const hello2 = message => {
+  console.log(message)
+}
+
+const hello3 = (message, partingMessage) => {
+  console.log(`${message} and say goodbye like ${partingMessage}`)
+}
+
+hello()
+hello2('sah duhhhhh')
+hello3('sah', 'later')
+
+// does not work == google for example
+// const grabIdContent = (e) => {
+//   const pTag = $(this).parent()
+// }
+
+const someArray =  [1, 2, 3, 4, 5, 6, 7]
+
+someArray.forEach(element => {
+  console.log(element)
+})
