@@ -36,13 +36,15 @@ hello()
 hello2('sah duhhhhh')
 hello3('sah', 'later')
 
-// does not work == google for example
 // const grabIdContent = (e) => {
 //   const pTag = $(this).parent()
 // }
+// this does not work with => == google for example
 
 const someArray =  [1, 2, 3, 4, 5, 6, 7]
 
 someArray.forEach(element => {
   console.log(element)
 })
+
+module.exports = Demo
